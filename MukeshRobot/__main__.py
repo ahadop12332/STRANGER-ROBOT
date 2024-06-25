@@ -76,23 +76,12 @@ PM_START_TEX = """
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} , 🥀
-*๏ ɪ'ᴍ {} ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!
-ʜɪᴛ ʜᴇʟᴘ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ɪɴ ᴍʏ ғᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ!*
-➻ *ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ  ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.*
+๏ ɪ'ᴍ ˹Mɪᴛsᴜꝛɪ˼ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ʀᴏʙᴏᴛ ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ꜱᴇᴄᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ʜᴜɢᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ. ɪ ʜᴀᴠᴇ ᴍᴜsɪᴄ ᴘᴏᴡᴇʀ ᴛᴏᴏ.**
 ─────────────────
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
-
-buttons = [
-    [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
     [
         InlineKeyboardButton(
             text="Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ",
@@ -216,9 +205,9 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("❤")
+            lol.edit_text("🎊")
             time.sleep(0.5)
-            lol.edit_text("⚡")
+            lol.edit_text("🥂")
             time.sleep(0.3)
             lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.4)
@@ -232,7 +221,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ  !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ᴋᴏɴɪᴄʜɪᴡᴀ ɪ ᴀᴍ ᴀʟɪᴠᴇ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -378,14 +367,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
+    
                     [
                         InlineKeyboardButton(
                             text="🚩sᴜᴩᴩᴏʀᴛ", callback_data="mukesh_support"
